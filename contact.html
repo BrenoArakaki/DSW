@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Vitrine Macintosh</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    .little{
+            width: 18px;
+        }
+        .navbar-custom {
+    background-color: #272727; 
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="index.html"><img src="images/apple.png" class="little">&nbsp;Macintosh</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="features.html">Recursos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="container my-5">
+        <h2 class="text-center">Entre em Contato</h2>
+        <form class="mt-4">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Seu email">
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Escreva sua mensagem aqui"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        </form>
+
+
+        <div class="my-5">
+            <h4 class="text-center">Nosso Endereço</h4>
+            <div class="embed-responsive embed-responsive-16by9 mt-3">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3668874327415!2d-122.41941508468129!3d37.77492917975961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085811b22f65b67%3A0x2b8d3f0e8f5b24d6!2sSan%20Francisco%2C%20CA%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1614656278945!5m2!1spt-BR!2sbr"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                </iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="navbar-custom text-white text-center py-4">
+        <p>&copy; 2024 Macintosh. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

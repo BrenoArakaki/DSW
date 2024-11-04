@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrine Macintosh</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+    background-color: #272727; 
+}
+        .little{
+            width: 18px;
+        }
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+        .intro-text {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="index.html"><img src="images/apple.png" class="little">&nbsp;Macintosh</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="macSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#macSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#macSlider" data-slide-to="1"></li>
+            <li data-target="#macSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/teste.jpg" class="d-block w-100" alt="Macintosh 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Descubra o Macintosh</h5>
+                    <p>O início da computação moderna.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/design.jpg" class="d-block w-100" alt="Macintosh 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Design Icônico</h5>
+                    <p>Uma revolução na estética e funcionalidade.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/tec.jpg" class="d-block w-100" alt="Macintosh 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Tecnologia Inovadora</h5>
+                    <p>Mudando a forma como interagimos com computadores.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#macSlider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#macSlider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <section id="about" class="container my-5">
+        <h2 class="text-center">Sobre o Macintosh</h2>
+        <p class="intro-text text-center mt-4">
+            O Macintosh, ou Mac, foi a primeira linha de computadores da Apple que revolucionou a forma como pensamos sobre computação pessoal. Conhecido por sua interface amigável e design elegante, o Macintosh continua sendo um produto icônico na história da tecnologia.
+        </p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="container my-5">
+        <h2 class="text-center">Características</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/design.jpg" class="card-img-top" alt="Feature 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Design Inovador</h5>
+                        <p class="card-text">O Macintosh introduziu um design revolucionário que enfatizava simplicidade e elegância.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/tec.jpg" class="card-img-top" alt="Feature 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Interface Intuitiva</h5>
+                        <p class="card-text">A interface gráfica mudou para sempre a maneira como as pessoas interagem com os computadores.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/mac.jpg" class="card-img-top" alt="Feature 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Desempenho Poderoso</h5>
+                        <p class="card-text">O Macintosh ofereceu poderosas capacidades de processamento em um design compacto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="container my-5">
+        <h2 class="text-center">Perguntas Frequentes</h2>
+        <div class="accordion mt-4" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="faq1">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            Qual é o sistema operacional do Macintosh?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse1" class="collapse show" aria-labelledby="faq1" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        O Macintosh roda o sistema operacional macOS, conhecido por sua interface amigável e alto desempenho.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="faq2">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            Qual é a garantia do produto?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        O Macintosh vem com uma garantia padrão de um ano, com opções de extensão disponíveis.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="faq3">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            É possível atualizar o hardware?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Sim, certos componentes do hardware podem ser atualizados para melhorar o desempenho.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="faq4">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            Quais métodos de pagamento são aceitos?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse4" class="collapse" aria-labelledby="faq4" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Aceitamos cartões de crédito, boleto bancário e pagamentos via PIX para uma experiência de compra mais rápida.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="faq5">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                            Em quanto tempo receberei meu pedido?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse5" class="collapse" aria-labelledby="faq5" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        O prazo de entrega varia conforme a região. Normalmente, entregas dentro do Brasil levam de 5 a 10 dias úteis após a confirmação do pagamento.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="buy-now" class="container my-5 text-center">
+        <h2 class="text-center mb-4">Adquira o Seu Macintosh Hoje!</h2>
+        <a href="buynow.html" class="btn btn-primary btn-lg font-weight-bold px-4 py-2 shadow-lg rounded-pill">
+            Comprar Agora
+        </a>
+    </section>
+
+    <footer id="contact" class="navbar-custom text-white text-center py-4">
+        <p>&copy; 2024 Macintosh. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
